@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Regalo</title>
+
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    flex-direction: column;
+  }
+  .regalo {
+    width: 100px;
+    height: 100px;
+    background-color: #ff4500; /* color del regalo */
+    position: relative;
+    border-radius: 5px;
+  }
+  .cinta {
+    width: 20px;
+    height: 80px;
+    background-color: #ffebcd; /* color de la cinta */
+    position: absolute;
+    left: 40px;
+    top: 10px;
+    transform: rotate(-45deg);
+  }
+</style>
+</head>
+<body>
+  <div class="regalo">
+    <div class="cinta"></div>
+  </div>
+</body>
+</html>

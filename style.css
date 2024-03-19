@@ -1,0 +1,115 @@
+@keyframes vibrar {
+    0% {
+      transform: translateX(-2px);
+    }
+    50% {
+      transform: translateX(2px);
+    }
+    100% {
+      transform: translateX(-2px);
+    }
+}
+
+@keyframes abrir {
+    0%{
+        width: 150px;
+        height: 150px;
+    }
+    100%{
+        width: 250px;
+        height: 250px;
+    }
+}
+
+body{
+    background-color: #5f5c8f;
+    color: #70a4c8;
+    width: auto;
+    height: 700px;
+    text-align: center;
+    flex-direction: row;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#regalos{
+    width: 1000px;
+    height: 1000px;
+}
+
+.regalo{
+    width: 150px;
+    height: 150px;
+}
+.regalo:hover{
+    animation: vibrar 0.1s 7 alternate, abrir 2.5s forwards;
+}
+
+#precionarRegalo{
+    display: none;
+}
+
+#imagen1{
+    display: none; /* La imagen está oculta inicialmente */
+    width: 150px;
+    height: 150px;
+    position: relative;
+
+}
+
+#contenidoFotos{
+    width: 800px;
+    height: 800px;
+
+}
+
+#regalo div{
+    width: 1000px;
+    height: 1000px;
+}
+
+#precionarRegalo{
+    background-color: #333463;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #494879;
+}
+
+#tituloCarta{
+    color: wheat;
+    text-shadow: 3px 3px 10px #494879;
+}
+
+#video{
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #494879;
+}
+
+#fotoVerti{
+    width: 100px;
+    height: 100px;
+}
+
+#fotos img{
+    margin: 10px;
+    width: 300px;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #494879;
+}
+
+#fotos p{
+    margin: 5px 10px;
+}
+
+h3{
+    margin: 10px 5px;
+}
+
+
